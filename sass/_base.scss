@@ -1,0 +1,152 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color:black;
+    background-color: whitesmoke;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF7ED;
+    font-family: "Inter", sans-serif;
+  }
+  
+  body::-webkit-scrollbar {
+  display: none;
+  }
+  
+  body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  }
+
+
+
+  .floating-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .chat-icon {
+    font-weight: bold;
+  }
+   
+  
+  .test-elements{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:5px;
+  }
+
+  .pizza{
+    margin-left: 70px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.3);
+    color: chocolate;
+    margin-top: 20px;
+
+    
+  }
+
+  .pizza:hover{
+    opacity: 0.8;
+    transform: translateY(-2px);
+    color: #007bff;
+  }
+
+
+  .pizza > img{
+   height: 200px;
+   width: 300px;
+   border-radius: 5px;
+  }
+  
+  .host-vans{
+    display: flex;
+    align-items: center;
+    color: chocolate;
+    margin: 25px;
+    padding: px;
+    background-color: white;
+    border-left: 4px solid chocolate;
+    animation: fadeIn 1s ease-in 0s forwards;
+
+    
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.8;
+      color: green;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(1%);
+    }
+  }
+
+  .host-vans:hover{
+    opacity: 0.8;
+    transform: translateY(-2px);
+    transform: t;
+    border-left: 4px solid blueviolet;
+    color: blueviolet;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.3);
+  }
+
+  .host-vans > img{
+      height: 120px;
+      width: 120px;
+      border-radius: 12px;
+      margin-left: 10px;
+  }
+
+  .text{
+    padding: 2px;
+    margin-left: 10px;
+  }
+
+  .host-vans:hover, .host-vans > div{
+    animation: slideLeft 0.7s ease-in-out;
+     
+  }
+
+  .recipe-elements{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
